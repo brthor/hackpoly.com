@@ -1,21 +1,6 @@
 @charset "utf-8";
 /* Hack Poly CSS */
 
-body {
-	padding:0;
-	margin:0;
-	background-color:#fff;
-	font-family:Arial, Helvetica, sans-serif;
-	color: #29424E;
-}
-
-#container {
-	width:1024px;
-	margin-left: auto ;
- 	margin-right: auto ;
-	background-color:green;
-	box-shadow: 0px 0px 5px #888888;
-}
 
 #title_img {
 	width:100%;
@@ -25,7 +10,6 @@ body {
 }
 
 #title {
-	width:1024px;
 	background-color:#E1F4FD;
 	margin-bottom:-28px;
 	margin-left:auto;
@@ -33,37 +17,31 @@ body {
 }
 
 #intro {
-	width:1024px;
 	background-color:#E1F4FD;
 	margin-bottom:-28px;
 }
 
 #about {
-	width:1024px;
 	background-color:#E1F4FD;
 	margin-bottom:-28px;
 }
 
 #sponsor {
-	width:1024px;
 	background-color:#E1F4FD;
 	margin-bottom:-28px;
 }
 
 #schedule {
-	width:1024px; 
 	background-color:#E1F4FD;
 	margin-bottom:-29px;
 }
 
 #faq {
-	width:1024px;
 	background-color:#E1F4FD;
 	margin-bottom:-28px;
 }
 
 #footer {
-	width:1024px;
 	background-color:#29424E;
 	margin-top:28px;
 	margin-bottom:-20px;
@@ -92,7 +70,6 @@ h1.faq {
 p.section {
 	padding-left:100px;
 	padding-right:100px;
-	padding-bottom:10px;
 	font-size: 20px;
 }
 
@@ -226,112 +203,95 @@ a.title {
     user-select:none;
 }
 
-table.about {
-	margin-left:auto;
-	margin-right:auto;
-	width:1024px;
+.main-offset{
+	height: 100px;
+	width:auto;
 }
 
-td.about {
+.landing {
+	background:#0071bc;
+	background-position:center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.landing-text {
+	width:50%;
+	color:#fff;
+	text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.landing-info a{
+	color:#fff;
+	text-decoration: underline;
+}
+
+.landing-info i{
+	color:#1ABC9C;
+}
+
+.landing-info{
+	font-size: 20px;
+}
+
+.background-1{
+	background:#FFF;
+	color:black;
+}
+.background-2 {
+	background:#0071bc;
+	color:white;
+}
+
+.background-1 h3 {
+	color:#0071bc!important;
+}
+
+.background-1 h4 {
+	color:#0071bc!important;
+}
+
+.background-2 h3 {
+	color:white;
+}
+
+.background-2 h4 {
+	color:white;
+}
+
+.info-section {
+	width:100%;
+}
+
+/* Bootstrap overrides */
+.navbar-default{
+	background-color: #FFFFFF!important;
+	color:#0071bc;
+	border-bottom:0px;
+
+	-webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 1px 2px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 1px 2px rgba(50, 50, 50, 0.3);
+}
+
+.navbar-default .navbar-nav li a {
+	color:#0071bc;
+	line-height: 60px;
+	vertical-align: middle;
+}
+
+.navbar-default .navbar-brand{
+	color:#0071bc;
+}
+.jumbotron {
+	background:none;
+}
+.jumbotron h1 small {
+	color:#FFF;
+}
+.time {
+	width:100px;
+	float:left;
 	text-align: center;
-	width:341px;
-	font-size:38px;
 }
 
-table.schedule {
-	 border:1px solid #333;
-	 margin-left: auto;
-     margin-right: auto;
-	 background-color:#B6E4FA;
-}
-
-td.schedule, th.schedule {
-	border:1px solid #333;
-	width: 200px;
-}
-
-hr.content {
-	color:#29424E;
-	margin-left:30px;
-	margin-right:30px;
-	background-color:#29424E;
-	height: 2px;
-	border:0;
-}
-
-hr.contentTop {
-	color:#29424E;
-	margin-left:30px;
-	margin-right:30px;
-	background-color:#29424E;
-	height: 1px;
-	border:0;
-}
-
-img.about {
-	margin-left:100px;
-	margin-right:auto;
-}
-
-img.aboutAlt {
-	margin-left:30px;
-	margin-right:auto;
-}
-
-
-/* Navigation */
-
-.navbar {
-	width:1024px;
-	padding-bottom:1px;
-	position:static;
-}
-
-#nav {
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	background: #003D58;
-	border-bottom: 1px solid #999;
-}
-	
-#nav li { 
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-	
-#nav a {
-	float: left;
-	display: block;
-	padding: 6px 30px 6px 5px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 90%;
-	color: #D7EFF9;
-	background: #003D58 url(/Users/jediscott91/Desktop/HackPoly/slang1.png) no-repeat top right;
-}
-	
-#nav #nav-1 a {
-	padding-left: 20px;
-		}
-	
-#nav a:hover {
-	color:#8BBFE7;
-}
-
-#nav-left {
-	padding
-	background: #003D58 url(slang1.png) no-repeat top right;
-}
-
-.sticky {  
-    position: fixed;  
-    width: 100%;  
-    left: 0;  
-    top: 0;  
-    z-index: 100;  
-    border-top: 0;
-} 
