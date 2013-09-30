@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* Hack Poly CSS */
+
+
+
+.footer {
+	background-color:#FFF;
+	margin-top:28px;
+	margin-bottom:-20px;
+}
+
+
+p.section {
+	padding-left:100px;
+	padding-right:100px;
+	font-size: 20px;
+}
+
+
+
+.main-offset{
+	height: 100px;
+	width:auto;
+}
+
+.landing {
+	background:#0071bc;
+	background-position:center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.landing-text {
+	width:50%;
+	color:#fff;
+	text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.landing-info a{
+	color:#fff;
+	text-decoration: underline;
+}
+
+.landing-info i{
+	color:#1ABC9C;
+}
+
+.landing-info{
+	font-size: 20px;
+}
+
+.background-1{
+	background:#FFF;
+	color:black;
+}
+.background-2 {
+	background:#0071bc;
+	color:white;
+}
+
+.background-1 h1 {
+	color:#0071bc!important;
+}
+
+.background-1 h3 {
+	color:#0071bc!important;
+}
+
+.background-1 h4 {
+	color:#0071bc!important;
+}
+
+.background-2 h3 {
+	color:white;
+}
+
+.background-2 h4 {
+	color:white;
+}
+
+.info-section {
+	width:100%;
+}
+
+.icon-bar {
+	color:#0071bc;
+}
+
+.collab{
+	text-align: center;
+}
+
+.collab img {
+	max-width:150px;
+	margin-right: 5px;
+	margin-left:5px;
+	height:auto;
+}
+
+.footer {
+	color:#000;
+	text-align: center;
+}
+
+/* Bootstrap overrides */
+.navbar-default{
+	background-color: #FFFFFF!important;
+	color:#0071bc;
+	border-bottom:0px;
+
+	-webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 1px 2px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 1px 2px rgba(50, 50, 50, 0.3);
+}
+
+.navbar-default .navbar-nav li a {
+	color:#0071bc;
+	line-height: 60px;
+	vertical-align: middle;
+}
+
+.navbar-default .navbar-brand{
+	color:#0071bc;
+}
+.jumbotron {
+	background:none;
+}
+.jumbotron h1 small {
+	color:#FFF;
+}
+.time {
+	width:auto;
+	float:left;
+	text-align: center;
+	margin-left:10px;
+	margin-right:10px;
+}
+
