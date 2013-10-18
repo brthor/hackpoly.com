@@ -9,11 +9,19 @@
 	margin-bottom:-20px;
 }
 
+.clubimg {
+	vertical-align: middle;
+	max-height: 200px;
+}
 
 p.section {
 	padding-left:100px;
 	padding-right:100px;
 	font-size: 20px;
+}
+
+.section {
+	margin-bottom: 30px;
 }
 
 
@@ -27,11 +35,10 @@ p.section {
 	background:#0071bc;
 	background-position:center;
 	background-repeat: no-repeat;
-	height: 500px;
+	min-height: 500px;
 }
 
 .landing-text {
-	width:50%;
 	color:#fff;
 	text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
 }
@@ -46,7 +53,7 @@ p.section {
 }
 
 .landing-info{
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .background-1{
@@ -91,10 +98,15 @@ p.section {
 }
 
 .collab img {
-	max-width:150px;
+	max-width: 100%;
 	margin-right: 5px;
 	margin-left:5px;
-	height:auto;
+	max-height:50px;
+	margin-bottom: 40px;
+}
+
+.collab h1 {
+	font-size: 65px;
 }
 
 .footer {
@@ -129,10 +141,9 @@ p.section {
 	color:#FFF;
 }
 .time {
-	width:auto;
-	float:left;
 	text-align: center;
-	margin-left:10px;
-	margin-right:10px;
+}
+.social-icon {
+	font-size: 30px;
 }
 
