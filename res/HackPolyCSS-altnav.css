@@ -33,6 +33,8 @@ p.section {
 
 .landing {
 	background:#0071bc;
+	/*background-image: url("cover-back.png");*/
+	background-size: 100%;
 	background-position:center;
 	background-repeat: no-repeat;
 	min-height: 500px;
@@ -134,16 +136,31 @@ p.section {
 .navbar-default .navbar-brand{
 	color:#0071bc;
 }
+
 .jumbotron {
 	background:none;
 }
+
 .jumbotron h1 small {
 	color:#FFF;
 }
+
 .time {
 	text-align: center;
 }
-.social-icon {
+
+.social-icon a{
 	font-size: 30px;
+	text-align: right;
 }
 
+.social-icon i {
+	vertical-align: middle;
+	line-height: 60px;
+}
+
+.social-icon
+{
+	vertical-align: middle;
+	line-height: 60px;
+}
