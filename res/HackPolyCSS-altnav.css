@@ -1,7 +1,20 @@
 @charset "utf-8";
 /* Hack Poly CSS */
+/* Color Values
+	primary blue:		#0071bc;
+	secondary blue:		#3498db;
+	secondary greenish: #1ABC9C;
+*/
 
+.ic-prefix{
+	position:relative;
+	margin-left: 15px;
+}
 
+.ic-prefix i{
+	position:absolute;
+	left:-15px;
+}
 
 .footer {
 	background-color:#FFF;
@@ -24,25 +37,68 @@ p.section {
 	margin-bottom: 30px;
 }
 
-
-
 .main-offset{
 	height: 100px;
 	width:auto;
 }
 
 .landing {
-	background:#0071bc;
-	/*background-image: url("cover-back.png");*/
-	background-size: 100%;
-	background-position:center;
+	/*background:#0071bc;*/
+	background-image: url("CLA_Portrait.png");
+	background-size: cover;
+	background-position: top right;
 	background-repeat: no-repeat;
-	min-height: 500px;
+	
+	height: 700px;
+}
+
+.landing .container {
+	position: relative;
+	height: 100%;
+}
+
+.landing .container .btn-group{
+	position:absolute;
+	bottom:75px;
+	left:0px;
+}
+
+.background-image-1{
+	background-image: url("cp_night.png");
+	background-size: cover;
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.interrupt {
+	height:500px;
+	text-align: center;
+	color:#FFF;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, .6);
+}
+
+.interrupt h1 {
+	margin-top: 0px;
+	padding-top: 20px;
+	font-size: 72px;
 }
 
 .landing-text {
+	padding-top: 50px;
 	color:#fff;
-	text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, .6);
+}
+.landing-text h1 {
+	font-size:72px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.landing-text p{
+	text-shadow: none;
+	font-size: 24px;
+	color:#3498db;
+	text-shadow: 0px 2px 2px rgba(255, 255, 255, .6);
 }
 
 .landing-info a{
@@ -51,11 +107,15 @@ p.section {
 }
 
 .landing-info i{
-	color:#1ABC9C;
+	color:#3498db;
+	text-shadow: none;
+	text-align: center;
+	width:15px;
 }
 
 .landing-info{
 	font-size: 16px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, .6);
 }
 
 .background-1{
