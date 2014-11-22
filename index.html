@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.0/flatly/bootstrap.min.css" rel="stylesheet">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<!-- External Stylesheets -->
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/lumen/bootstrap.min.css" rel="stylesheet" />
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Oswald' rel='stylesheet' type='text/css'>
 
+<!-- Internal Styles -->
   <link rel="stylesheet" type="text/css" href="res/styles.css">
 
+<!-- Favicon Stuff -->
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -18,72 +24,88 @@
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#2d89ef">
-
-  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Oswald' rel='stylesheet' type='text/css'>
+<!-- End  -->
 
   <title>hackpoly | not your everyday hackathon</title>
-
 
 </head>
 
 <body>
 
-  <div class="container-fluid">
-    <div id="video-bg">
-      <video class="background-video" autoplay muted loop>
-        <source src="res/bg_typing.mp4" type="video/mp4">
-        <source src="res/bg_typing.webm" type="video/webm">
-        Your browser does not support html5 video. Time to upgrade!
-      </video>
-    </div>
-
-    <div class="header-content">
-      <h1> Not your everyday hackathon. </h1>
-    </div>
-
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top animated-nav" role="navigation">
     <div class="container">
-      <div class="main-content">
-        <h3>About</h3> 
-        <p>
-          Lorem ipsum dolor sit amet, ius eu sonet suscipiantur. Te insolens intellegam cum, eu velit consul democritum vel. Has feugiat lobortis an. Pri atomorum laboramus deterruisset et, laudem tibique est ei.
-        </p>
 
-        <p>
-          Enim iudico ex pri, quis oportere praesent sit at. Est fabulas sensibus an, delicata sadipscing ius te. At pro veri sapientem, qui an harum nominavi similique. Nisl illud ex pro. Mea ne harum electram vituperata, vix tollit debitis legendos eu. Mei fuisset accumsan ullamcorper ex, et copiosae prodesset quo.
-        </p>
+    </div>
+  </nav>
 
-        <p>
-          Eu vix bonorum habemus, et corpora erroribus quaerendum eam. Veri homero contentiones te nec. Quod prima intellegat per at, id per exerci malorum, eos civibus omnesque posidonium ut. Eam facer salutandi signiferumque at, eos melius deserunt platonem ne.
-        </p>
+  <div class="container-fluid">
 
-        <p>
-          Iusto docendi mel eu, congue labitur ne vix. Sale virtute philosophia ex mei. Cum id voluptaria definiebas, summo dolorum eam no, facete volumus cum eu. Labitur iudicabit maiestatis cu vim. Dicat vivendo pri ad, sit ex nisl habeo percipit, meliore omnesque contentiones no vim.
-        </p>
-        <p>
-          Ne eum epicurei constituam, erant populo ea usu. Clita alterum vix ea, vix an viderer dolorem lucilius. Vix in consulatu abhorreant comprehensam, nisl molestiae at vix, officiis elaboraret comprehensam his in. Fuisset fabellas sententiae quo eu. Labitur dolorum utroque eu per, no vix suas vero legimus, ius audire accusata ea. Cum at officiis apeirian, an enim illum possit usu.
-        </p>
+    <!-- Header Portion -->
+    <div id="top-image" class="image-module">
+      <img src="res/cp_night_gray.png" alt="Hack Cal Poly Pomona" />
+      <div class="overlay"></div>
+
+      <div class="hero-line">
+        <h1> Not Your Everyday Hackathon </h1>
+
+        <div class="action">
+          <button type="button" id="apply-button" class="btn btn-default btn-lg"> Apply </button>
+        </div>
       </div>
+
+      
     </div>
 
+    <div class="blur-module about" data-blur-target="top-image">
+    </div>
   </div>
 
-<script src="res/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- External Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46285917-1', 'hackpoly.com');
-  ga('send', 'pageview');
+    ga('create', 'UA-46285917-1', 'hackpoly.com');
+    ga('send', 'pageview');
 
-</script>
+  </script>
 
-<!-- Custom Scroll functionality -->
-<script>
+  <!-- Internal Behavior -->
+  <script>
+    $(document).ready(function(){
+      //When scrolling past the header text, bring in navbar
+      var $heroText = $(".hero-line").first();
+      var $nav = $(".navbar").first();
 
-</script>
+      //For animating the navbar
+      var oldHeight = $nav.height();
+      var navVis = false;
+      $(window).scroll(function(){
+        if($(document).scrollTop() > ($heroText.position().top-60)){
+          if(!navVis){
+           $nav.addClass('notransition');
+           $nav.css('height', ((oldHeight*1) + 50) + "px");
+           console.log(((oldHeight*1) + 50) + "px");
+           console.log($nav.css('height'));
+           $nav.removeClass('notransition');
+
+
+           $nav.css('display','block');
+           $nav.css('height',oldHeight);
+           $nav.css('opacity',0.8);
+
+           navVis = true;
+          }
+        }
+      });
+
+    });
+  </script>
 
 </body>
 </html>

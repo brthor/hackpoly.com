@@ -3,8 +3,83 @@ h1{
 	font-weight: 400;
 }
 
-#video-bg {
+body{
+	font-family:'Oswald';
+}
 
+.animated-nav{
+	display:none;
+	opacity: 0;
+
+	-webkit-transition: height 0.7s, opacity 0.7s;
+	transition: height 0.7s, opacity 0.7s;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+.image-module img{
+	width:100%;
+	height:auto;
+
+	position:absolute;
+	left:0;
+	top:0;
+
+	z-index:-20;
+}
+
+.image-module .overlay {
+	width:100%;
+	height: 100%;
+
+	background: black;
+	opacity: .3;
+
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-19;
+}
+
+.image-module {
+
+}
+
+.hero-line h1{
+	font-family:'Quicksand';
+	font-weight: 400;
+
+	font-size: 48px;
+
+	text-align: center;
+	color:white;
+
+	margin-top:40%;
+	margin-bottom:20%;
+}
+
+.hero-line .action {
+	margin-top:20%;
+}
+
+.hero-line .action button{
+	display:block;
+	max-width: 100%;
+	width:200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.hero-line{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .background-video{
