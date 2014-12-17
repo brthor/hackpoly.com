@@ -8,7 +8,9 @@
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
   <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/lumen/bootstrap.min.css" rel="stylesheet" />
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Oswald' rel='stylesheet' type='text/css'>
+
+<!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway:400,200' rel='stylesheet' type='text/css'>
 
 <!-- Internal Styles -->
   <link rel="stylesheet" type="text/css" href="res/styles.css">
@@ -36,8 +38,21 @@
   <nav class="navbar navbar-default navbar-fixed-top animated-nav" role="navigation">
     <div class="container">
 
+      <a class="navbar-brand" href="#"> 
+        <img id="hpoly-logo" src="res/hackpoly.png" alt="cal poly pomona hackathon logo" /> 
+      </a>
+
+      <div class="navbuttons navbar-right">
+          <button type="button" class="btn btn-default navbar-btn">Apply</button>
+          <button type="button" class="btn btn-default navbar-btn">Sponsor</button>
+      </div>
+
     </div>
   </nav>
+
+  <div id="prenav">
+    <img id="hpoly-logo" src="res/hackpoly-white.png" alt="cal poly pomona hackathon logo" /> 
+  </div>
 
   <div class="container-fluid">
 
@@ -47,19 +62,61 @@
       <div class="overlay"></div>
 
       <div class="hero-line">
-        <h1> Not Your Everyday Hackathon </h1>
+        <h1> Innovation Inspiring Success </h1>
 
         <div class="action">
-          <button type="button" id="apply-button" class="btn btn-default btn-lg"> Apply </button>
+          <!-- <button type="button" id="sponsor-button" class="btn btn-success btn-lg"> Sponsor </button> -->
+          <div id="application-form" class="">
+
+          </div>
+          
+          <button type="button" id="apply-button" class="btn btn-primary btn-lg"> Apply </button>
         </div>
       </div>
 
       
     </div>
 
-    <div class="blur-module about" data-blur-target="top-image">
+    <div id="about" class="blur-module" data-blur-target="#top-image">
+      <div class="container">
+        <h2> What Is hackpoly? </h2>
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisl quis nunc mattis semper et vitae lorem. Praesent tincidunt sodales mollis. Nunc tempus quam non felis pharetra maximus. Curabitur in libero ex. Integer lectus ex, mattis a risus id, pellentesque molestie diam. Vivamus in sapien ac ex blandit ultricies. Duis non maximus urna, et ultrices purus.
+        </p>
+
+        <p>
+          Suspendisse eget feugiat lacus, eget convallis mi. Praesent et dolor id nibh blandit tincidunt ac non magna. Maecenas non libero vestibulum, accumsan ex eget, facilisis nisi. Aenean pellentesque, risus sed pharetra malesuada, lorem metus accumsan sem, volutpat auctor tellus sem at massa. Nunc ultricies tellus massa. Sed ipsum lacus, feugiat accumsan tincidunt ut, fermentum eu turpis. Mauris rutrum egestas tempor. Curabitur congue, risus non efficitur porta, dui lectus pretium arcu, in pellentesque dui mi vel ante. In nec tellus vel velit accumsan tristique eget eget nisl. Cras imperdiet magna nec tellus posuere porttitor. Morbi scelerisque, neque eu placerat mattis, magna nulla bibendum velit, a blandit sapien neque nec nisi.
+        </p>
+
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisl quis nunc mattis semper et vitae lorem. Praesent tincidunt sodales mollis. Nunc tempus quam non felis pharetra maximus. Curabitur in libero ex. Integer lectus ex, mattis a risus id, pellentesque molestie diam. Vivamus in sapien ac ex blandit ultricies. Duis non maximus urna, et ultrices purus.
+        </p>
+
+        <p>
+          Suspendisse eget feugiat lacus, eget convallis mi. Praesent et dolor id nibh blandit tincidunt ac non magna. Maecenas non libero vestibulum, accumsan ex eget, facilisis nisi. Aenean pellentesque, risus sed pharetra malesuada, lorem metus accumsan sem, volutpat auctor tellus sem at massa. Nunc ultricies tellus massa. Sed ipsum lacus, feugiat accumsan tincidunt ut, fermentum eu turpis. Mauris rutrum egestas tempor. Curabitur congue, risus non efficitur porta, dui lectus pretium arcu, in pellentesque dui mi vel ante. In nec tellus vel velit accumsan tristique eget eget nisl. Cras imperdiet magna nec tellus posuere porttitor. Morbi scelerisque, neque eu placerat mattis, magna nulla bibendum velit, a blandit sapien neque nec nisi.
+        </p>
+
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisl quis nunc mattis semper et vitae lorem. Praesent tincidunt sodales mollis. Nunc tempus quam non felis pharetra maximus. Curabitur in libero ex. Integer lectus ex, mattis a risus id, pellentesque molestie diam. Vivamus in sapien ac ex blandit ultricies. Duis non maximus urna, et ultrices purus.
+        </p>
+
+        <p>
+          Suspendisse eget feugiat lacus, eget convallis mi. Praesent et dolor id nibh blandit tincidunt ac non magna. Maecenas non libero vestibulum, accumsan ex eget, facilisis nisi. Aenean pellentesque, risus sed pharetra malesuada, lorem metus accumsan sem, volutpat auctor tellus sem at massa. Nunc ultricies tellus massa. Sed ipsum lacus, feugiat accumsan tincidunt ut, fermentum eu turpis. Mauris rutrum egestas tempor. Curabitur congue, risus non efficitur porta, dui lectus pretium arcu, in pellentesque dui mi vel ante. In nec tellus vel velit accumsan tristique eget eget nisl. Cras imperdiet magna nec tellus posuere porttitor. Morbi scelerisque, neque eu placerat mattis, magna nulla bibendum velit, a blandit sapien neque nec nisi.
+        </p>
+
+      </div>
+
     </div>
   </div>
+
+  <!-- SVG Blur Fallback -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="blur">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+    </defs>
+  </svg>
 
   <!-- External Scripts -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -81,6 +138,7 @@
       //When scrolling past the header text, bring in navbar
       var $heroText = $(".hero-line").first();
       var $nav = $(".navbar").first();
+      var $prenav = $("#prenav").first();
 
       //For animating the navbar
       var oldHeight = $nav.height();
@@ -94,13 +152,28 @@
            console.log($nav.css('height'));
            $nav.removeClass('notransition');
 
-
            $nav.css('display','block');
            $nav.css('height',oldHeight);
            $nav.css('opacity',0.8);
 
+           $prenav.css('display', 'none');
+
            navVis = true;
           }
+        }
+      });
+
+      //Set up the blur modules
+      $('.blur-module').each(function(){
+        console.log($(this).data('blur-target'));
+        var $target = $($(this).data('blur-target'));
+        console.log($target)
+        if($target){
+          var targetImage = $target.find('img').first();
+          console.log(targetImage.attr('src'));
+          //$(this).css('background-image', 'url(' + targetImage.attr('src') + ')' );
+        }else{
+          console.log('#' + $(this).data('blur-target') + " is invalid.");
         }
       });
 

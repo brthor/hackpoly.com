@@ -1,10 +1,49 @@
-h1{
-	font-family:'Quicksand';
-	font-weight: 400;
+h1, h2{
+	font-family:'Raleway';
+	font-weight: 200;
 }
 
 body{
 	font-family:'Oswald';
+	font-weight:400 !important;
+}
+
+/* Bootstrap Overrides */
+.container-fluid {
+	padding:0px !important;
+}
+/* End Bootstrap Overrides */
+
+#prenav{
+	display: block;
+	position:fixed;
+	width:100%;
+	height:auto;
+	top:0;
+	left:0;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#prenav img{
+	display: block;
+	max-width:200px;
+	max-height:100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar-brand img{
+	display: block;
+	max-width:200px;
+	max-height:100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar-brand {
+	padding:0px;
 }
 
 .animated-nav{
@@ -27,9 +66,9 @@ body{
 	width:100%;
 	height:auto;
 
-	position:absolute;
-	left:0;
-	top:0;
+	position:fixed;
+	left:0px;
+	top:0px;
 
 	z-index:-20;
 }
@@ -48,38 +87,83 @@ body{
 }
 
 .image-module {
+	overflow: hidden;
+	margin-bottom:8%;
+}
 
+.hero-line {
+	text-align: center;
 }
 
 .hero-line h1{
-	font-family:'Quicksand';
-	font-weight: 400;
+	font-weight: 200;
 
-	font-size: 48px;
+	font-size: 56px;
 
 	text-align: center;
 	color:white;
 
-	margin-top:40%;
-	margin-bottom:20%;
+	margin-top:25%;
+	margin-bottom:10%;
 }
 
 .hero-line .action {
-	margin-top:20%;
+	display: inline-block;
+	margin-top:0%;
+	max-width: 100%;
 }
 
 .hero-line .action button{
-	display:block;
-	max-width: 100%;
+	
 	width:200px;
-	margin-right: auto;
-	margin-left: auto;
+	font-family:'Oswald';
+	font-weight:400 !important;
+
+	margin: 0 20px;
 }
 
 .hero-line{
 	width:100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.blur-module h2 {
+	padding: 20px 0;
+}
+
+.blur-module {
+	background-color: white;
+	position:relative;
+	overflow: hidden;
+    /*background-repeat:no-repeat;
+    background-position:1000px 1000px;*/
+   
+}
+
+.blur-module::before {
+	display: block;
+	position: absolute;
+	/*z-index:-1;*/
+	content: ' ';
+
+	width:100%;
+	height:100%;
+
+	background-image: url('cp_night_gray.png');
+	background-position: center 0px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color:black;
+
+	filter: url('../index.html/#blur');
+	-webkit-filter: url(#blur);
+
+	-webkit-filter: blur(6px); 
+	-moz-filter: blur(6px);
+	filter: blur(6px);
+	opacity: 0.4;
+
 }
 
 .background-video{
