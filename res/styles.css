@@ -14,6 +14,21 @@ body{
 }
 /* End Bootstrap Overrides */
 
+/* Custom Styling */
+.space20 {
+	width:100%;
+	height: 20%;
+}
+#what {
+	margin-top: 20%;
+}
+
+#about h2 {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
 #prenav{
 	display: block;
 	position:fixed;
@@ -66,11 +81,19 @@ body{
 	width:100%;
 	height:auto;
 
-	position:fixed;
-	left:0px;
-	top:0px;
-
 	z-index:-20;
+}
+
+.image-module .module-fixed {
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+
+.image-module .module-floating {
+	position:absolute;
+	top:0px;
+	left:0px;
 }
 
 .image-module .overlay {
@@ -87,6 +110,7 @@ body{
 }
 
 .image-module {
+	position:relative;
 	overflow: hidden;
 	margin-bottom:8%;
 }
