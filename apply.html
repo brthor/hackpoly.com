@@ -37,15 +37,28 @@
   <!-- Navbar -->
   <nav class="navbar navbar-default no-margin" role="navigation">
     <div class="container">
+      <div class="row">
 
-      <div class="navbar-logo" href="#"> 
-        <img id="hpoly-logo" src="res/hackpoly.png" alt="cal poly pomona hackathon logo" /> 
+        <div class="col-xs-3 text-left navmodule">
+          <a href="http://facebook.com/hackpoly">
+            <i class="fb-link fa fa-facebook-square"> </i>
+          </a>
+          <a href="http://twitter.com/hackpoly">
+            <span class="twitter-link fa fa-twitter-square"> </span>
+          </a>
+        </div>
+
+        <div class="col-xs-6 text-center">
+          <div class="navbar-logo">
+           <img id="hpoly-logo" src="res/hackpoly.png" alt="cal poly pomona hackathon logo" /> 
+         </div>
+        </div>
+
+        <div class="col-xs-3 text-right navmodule">
+          <button class="btn btn-primary"> Apply </button>
+        </div>
+
       </div>
-
-     <!--  <div class="navbuttons navbar-right">
-          <button type="button" class="btn btn-default navbar-btn">Apply</button>
-          <button type="button" class="btn btn-default navbar-btn">Sponsor</button>
-      </div> -->
 
     </div>
   </nav>
@@ -58,9 +71,27 @@
       <div class="container page">
 
         <h2 class="left-title-line"><span class="white">Application Details</span> </h2>
-        <form>
+
+        <form class="form-horizontal">
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="firstname">First Name</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" />
+            </div>
+
+            <label class="col-sm-2 control-label" for="lastname">Last Name</label>
+            <div class="col-sm-4">
+             <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" />
+           </div>
+          </div>
+
+          <div class="form-group">
+            
+          </div>
 
         </form>
+
       </div>
     </div>
 
