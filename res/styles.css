@@ -120,12 +120,22 @@ body{
 }
 
 .footer {
-	height: 60px;
+	min-height: 60px;
 	background: #f8f8f8;
 	color:black;
 	
 	border: solid #e7e7e7;
-	border-top: 4px 1px 0 1px;
+	border-width: 4px 1px 0 1px;
+
+	padding-top:20px;
+	padding-bottom:10px;
+
+	vertical-align: middle;
+
+}
+
+#pf-logo{
+	height:40px;
 }
 
 .subtle{
