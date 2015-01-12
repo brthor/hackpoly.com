@@ -136,7 +136,7 @@ body{
 }
 
 .subtle{
-	background-image:url("res/grey_@2x.png");
+	background-image:url("grey_@2x.png");
 	background-repeat: repeat;
 	height:100%;
 	margin-top: 0px;
@@ -161,7 +161,7 @@ body{
 } 
 
 .title-line span { 
-	background-image: url("res/grey_@2x.png");
+	background-image: url("grey_@2x.png");
 	background-repeat: repeat; 
 	background-position:center center;
 	padding:0 10px; 
@@ -176,7 +176,7 @@ body{
 } 
 
 .left-title-line span { 
-	background-image: url("res/grey_@2x.png");
+	background-image: url("grey_@2x.png");
 	background-repeat: repeat; 
 	background-position:center center;
 	padding:0 10px; 
