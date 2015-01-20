@@ -23,8 +23,8 @@ body{
 	font-size:40px;
 }
 
-@media (max-width: @screen-xs) {
-    .navmodule{font-size: 20px;}
+@media(max-width:767px){
+    .navmodule{font-size: 22px;}
 }
 
 .navbar-logo img{
@@ -40,16 +40,52 @@ body{
 .navbar-logo {
 	display:block;
 	padding:0px;
-	width: 200px;
+	width: 186px;
 	height:auto;
 	margin-right: auto;
 	margin-left: auto!important;
 	text-align: center;
 }
 
+.affix {
+	top:85px;
+	width:100%;
+}
 /* End Bootstrap Overrides */
 
 /* Custom Styling */
+
+#sidebar {
+	background:black;
+	height:100%;
+	overflow: auto;
+	padding-left: 0px;
+}
+
+#sidebar .list{
+	position:fixed;
+	top:85px;
+
+	width:50%;
+
+	text-align: left;
+	font-size:24px;
+	line-height: 36px;
+	list-style: none;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+#sidebar .list li{
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+
+#sidebar .list li button{
+	width:100%;
+}
 
 #faq .answer   {
 	margin-bottom: 30px;
@@ -103,8 +139,8 @@ body{
 	display:none;
 	opacity: 0;
 
-	-webkit-transition: height 0.5s, opacity 0.5s, top 0.8s;
-	transition: height 0.5s, opacity 0.5s, top 0.8s;
+	-webkit-transition: height 0.5s, opacity 0.5s, top 0.8s ease-out;
+	transition: height 0.5s, opacity 0.5s, top 0.8s ease-out;
 }
 
 .notransition {
@@ -186,6 +222,10 @@ body{
 
 .no-margin {
 	margin: 0px !important;
+}
+
+.no-padding {
+	padding: 0px !important;
 }
 
 .title-line { 
@@ -331,4 +371,49 @@ img.grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
   opacity: 1;
+}
+
+/*
+ * Off Canvas from: http://getbootstrap.com/examples/offcanvas/;
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
 }

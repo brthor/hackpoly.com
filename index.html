@@ -37,9 +37,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-default navbar-fixed-top animated-nav" role="navigation">
     <div class="container">
-      <div class="row">
+      <div class="row no-margin">
 
-        <div class="col-xs-2 text-left navmodule">
+        <div class="hidden-xs col-sm-2 text-left navmodule">
           <a href="http://facebook.com/hackpoly">
             <i class="fb-link fa fa-facebook-square"> </i>
           </a>
@@ -48,13 +48,19 @@
           </a>
         </div>
 
-        <div class="col-xs-8 text-center">
+        <div class="visible-xs-block col-xs-2 text-left navmodule">
+          <button id="sidebar-toggle" data-toggle="offcanvas" class="btn">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="col-xs-8 col-sm-8 text-center">
           <div class="navbar-logo">
            <img id="hpoly-logo" src="res/hackpoly.png" alt="cal poly pomona hackathon logo" /> 
          </div>
         </div>
 
-        <div class="col-xs-2 text-right navmodule">
+        <div class="hidden-xs col-sm-2 text-right navmodule">
           <button class="btn btn-primary"> Apply </button>
         </div>
 
@@ -66,296 +72,326 @@
   
 
   <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left no-margin">
 
-    <!-- Header Portion -->
-    <div id="top-image" class="image-module">
-      <div class="container">
-        <div id="prenav" class="row">
-
-          <div class="col-xs-2 text-left navmodule">
-            <a href="http://facebook.com/hackpoly">
-              <i class="fb-link fa fa-facebook-square fa-inverse"> </i>
-            </a>
-            <a href="http://twitter.com/hackpoly">
-              <span class="twitter-link fa fa-twitter-square fa-inverse"> </span>
-            </a>
-          </div>
-
-          <div class="col-xs-8 text-center">
-            <div class="navbar-logo">
-             <img id="hpoly-logo-white" src="res/hackpoly-white.png" alt="cal poly pomona hackathon logo" /> 
-           </div>
-          </div>
-
-        </div>
-      </div>
-
-    <!--   <div id="prenav">
-        
-      </div> -->
-
-      <div class="hero-line">
-        <h1> Build the Future <span class="hidden-xs">in SoCal</span> </h1>
-
-        <div class="action">
-          <!-- <button type="button" id="sponsor-button" class="btn btn-success btn-lg"> Sponsor </button> -->
-          <div id="application-form" class="">
-
-          </div>
+      <!-- Sidebar Content -->
+      <div id="sidebar" class="col-xs-6 visible-xs-block sidebar-offcanvas">
+        <ul class="list" >
           
-          <button type="button" id="apply-button" class="btn btn-primary btn-lg"> Apply </button>
-        </div>
+
+          <li >
+            <a href="http://facebook.com/hackpoly">
+              <i class="fb-link fa fa-facebook-square"></i> Facebook
+            </a>
+          </li>
+
+          <li >
+            <a href="http://twitter.com/hackpoly">
+              <i class="twitter-link fa fa-twitter-square"></i> Twitter
+            </a>
+          </li>
+
+          <li><button class="btn btn-primary sidebar-button"> Apply </button></li>
+
+        </ul>
       </div>
 
-      
-    </div>
+      <!-- All Main Content Here -->
+      <div class="col-xs-12 no-padding">
 
-    <div class="subtle">
-      <div class="container">
-        <div id="information" class="module">
+        <!-- Header Portion -->
+        <div id="top-image" class="image-module">
+          <div class="container">
+            <!-- Prenav -->
+            <div id="prenav" class="row no-margin">
 
-          <h2 class="title-line">
-            <span>
-              <span class="hidden-xs"> Hackpoly is Cal Poly Pomona's </span> 
-              <span class="visible-xs-inline"> CPP's </span>
-              Annual Hackathon.
-            </span> 
-          </h2>
+              <div class="hidden-xs col-sm-2 text-left navmodule">
+                <a href="http://facebook.com/hackpoly">
+                  <i class="fb-link fa fa-facebook-square"> </i>
+                </a>
+                <a href="http://twitter.com/hackpoly">
+                  <span class="twitter-link fa fa-twitter-square"> </span>
+                </a>
+              </div>
 
-          <div class="row text-center">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-             
-              <a href = "http://maps.google.com/maps/api/staticmap?center=34.052142,-117.814411&zoom=13&markers=Cal+Poly+Pomona+3801+West+Temple+Avenue+Pomona,+CA+91768&path=color:0x0000FF80|weight:5|34.06061,-117.81652&size=500x300&sensor=TRUE_OR_FALSE" class="font-large">
-                Cal Poly Pomona <br />
-                Southern California
-              </a>
+              <div class="visible-xs-block col-xs-2 text-left navmodule">
+                <button id="sidebar-toggle" data-toggle="offcanvas" class="btn">
+                  <i class="fa fa-bars"></i>
+                </button>
+              </div>
 
-               <h4> WHERE </h4> 
+              <div class="col-xs-8 col-sm-8 text-center">
+                <div class="navbar-logo">
+                 <img id="hpoly-logo-white" src="res/hackpoly-white.png" alt="cal poly pomona hackathon logo" /> 
+               </div>
+              </div>
+
             </div>
+          </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+          <div class="hero-line">
+            <h1> Build the Future <span class="hidden-xs">in SoCal</span> </h1>
+
+            <div class="action">
+              <!-- <button type="button" id="sponsor-button" class="btn btn-success btn-lg"> Sponsor </button> -->
+              <div id="application-form" class="">
+
+              </div>
               
-               <a target="_blank" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=MHQzcWpjN3Y2ZDN2YTlpYWZzM2E5dGc0bXMgcWYxbHNlNXQwMjllaDdxMXQ3MWVwbWdqdDRAZw&tmsrc=qf1lse5t029eh7q1t71epmgjt4%40group.calendar.google.com" class="font-large">
-                Friday, Feb 20th 6 PM - <br />
-                Saturday, Feb 21st 10 PM
-               </a>
-
-                <h4> WHEN </h4>
+              <button type="button" id="apply-button" class="btn btn-primary btn-lg"> Apply </button>
             </div>
           </div>
+
+          
         </div>
 
-        <div id="faq" class="module">
-          <h2 class="title-line"><span>FAQ</span></h2>
-          <div class="row text-justify">
+        <div class="subtle">
+          <div class="container">
+            <div id="information" class="module">
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                What is a hackathon?
-              </p>
-              <p class="answer">
-                A hackathon is difficult to explain. It's a type of invention competition at it's core. Hackathons break down something like this: You form up in a team, your team forms an idea, your team works tirelessly for 24 hours to bring this idea to reality, your team demos whatever it got working and perhaps wins some prizes. Of course, in between the commas of the last sentence is jammed pack excitement and surprises.
-              </p>
+              <h2 class="title-line">
+                <span>
+                  <span class="hidden-xs">Hackpoly is Cal Poly Pomona's Annual</span> 
+                  <span class="visible-xs-inline">CPP's</span> Hackathon.
+                </span> 
+              </h2>
+
+              <div class="row text-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                 
+                  <a href = "http://maps.google.com/maps/api/staticmap?center=34.052142,-117.814411&zoom=13&markers=Cal+Poly+Pomona+3801+West+Temple+Avenue+Pomona,+CA+91768&path=color:0x0000FF80|weight:5|34.06061,-117.81652&size=500x300&sensor=TRUE_OR_FALSE" class="font-large">
+                    Cal Poly Pomona <br />
+                    Southern California
+                  </a>
+
+                   <h4> WHERE </h4> 
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  
+                   <a target="_blank" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=MHQzcWpjN3Y2ZDN2YTlpYWZzM2E5dGc0bXMgcWYxbHNlNXQwMjllaDdxMXQ3MWVwbWdqdDRAZw&tmsrc=qf1lse5t029eh7q1t71epmgjt4%40group.calendar.google.com" class="font-large">
+                    Friday, Feb 20th 6 PM - <br />
+                    Saturday, Feb 21st 10 PM
+                   </a>
+
+                    <h4> WHEN </h4>
+                </div>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                Do I need to know how to code? 
-              </p>
-              <p class="answer">
-                Knowing how to code will definitely help, but isn't a requirement. Graphic design can be a large aspect of some projects. We will be hosting a series of workshops about apps, websites, and more in the week preceding Hackpoly. 
-                <a href="/hackweek.html"> Check out Hack Week! </a>
-              </p>
-            </div>
+            <div id="faq" class="module">
+              <h2 class="title-line"><span>FAQ</span></h2>
+              <div class="row text-justify">
 
-            <div class="clearfix visible-sm-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    What is a hackathon?
+                  </p>
+                  <p class="answer">
+                    A hackathon is difficult to explain. It's a type of invention competition at it's core. Hackathons break down something like this: You form up in a team, your team forms an idea, your team works tirelessly for 24 hours to bring this idea to reality, your team demos whatever it got working and perhaps wins some prizes. Of course, in between the commas of the last sentence is jammed pack excitement and surprises.
+                  </p>
+                </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                What should I bring?
-              </p>
-              <p class="answer">
-                Use your best judgement of course, but these are some things we recommend:
-                <ul>
-                  <li>A computer to work on (even a desktop will work)</li>
-                  <li>Toothbrush and Toothpaste</li>
-                  <li>Extra clothes</li>
-                  <li>Sleeping bag and a pillow(if you want to sleep)</li>
-                  <li>Any hardware that you'll need (arduinos, raspberry pi, etc... )</li>
-                </ul>
-              </p>
-            </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    Do I need to know how to code? 
+                  </p>
+                  <p class="answer">
+                    Knowing how to code will definitely help, but isn't a requirement. Graphic design can be a large aspect of some projects. We will be hosting a series of workshops about apps, websites, and more in the week preceding Hackpoly. 
+                    <a href="/hackweek.html"> Check out Hack Week! </a>
+                  </p>
+                </div>
 
-            <div class="clearfix visible-md-block"></div>
+                <div class="clearfix visible-sm-block"></div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                How long is the event?
-              </p>
-              <p class="answer">
-                The entire event (registration to judging) will run about 26 hours. A final schedule will be released closer to the event.
-              </p>
-            </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    What should I bring?
+                  </p>
+                  <p class="answer">
+                    Use your best judgement of course, but these are some things we recommend:
+                    <ul>
+                      <li>A computer to work on (even a desktop will work)</li>
+                      <li>Toothbrush and Toothpaste</li>
+                      <li>Extra clothes</li>
+                      <li>Sleeping bag and a pillow(if you want to sleep)</li>
+                      <li>Any hardware that you'll need (arduinos, raspberry pi, etc... )</li>
+                    </ul>
+                  </p>
+                </div>
 
-            <div class="clearfix visible-sm-block"></div>
-            <div class="clearfix visible-lg-block"></div>
+                <div class="clearfix visible-md-block"></div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                What kind of stuff should I build? Is there a theme?
-              </p>
-              <p class="answer">
-                Hackpoly doesn't have a theme and you can build whatever you like. At Hackpoly 2014, 
-                projects ranged from <a href="https://flic.kr/p/jycAPA">a hacked car</a>, 
-                to an <a href="https://flic.kr/p/jyHcUP">electric cello</a>, 
-                to an app that helps track your pantry.
-              </p>
-            </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    How long is the event?
+                  </p>
+                  <p class="answer">
+                    The entire event (registration to judging) will run about 26 hours. A final schedule will be released closer to the event.
+                  </p>
+                </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                Do I need a team?
-              </p>
-              <p class="answer">
-                You can put together a team beforehand, or join one during the event. Many people come with an idea and try to build a team around it. Others come in with a team and a set idea.
-              </p>
-            </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="clearfix visible-lg-block"></div>
 
-            <div class="clearfix visible-sm-block"></div>
-            <div class="clearfix visible-md-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    What kind of stuff should I build? Is there a theme?
+                  </p>
+                  <p class="answer">
+                    Hackpoly doesn't have a theme and you can build whatever you like. At Hackpoly 2014, 
+                    projects ranged from <a href="https://flic.kr/p/jycAPA">a hacked car</a>, 
+                    to an <a href="https://flic.kr/p/jyHcUP">electric cello</a>, 
+                    to an app that helps track your pantry.
+                  </p>
+                </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                How much does it cost?
-              </p>
-              <p class="answer">
-                Hackpoly is cost free to all attendees.
-              </p>
-            </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    Do I need a team?
+                  </p>
+                  <p class="answer">
+                    You can put together a team beforehand, or join one during the event. Many people come with an idea and try to build a team around it. Others come in with a team and a set idea.
+                  </p>
+                </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                Do I need to be a student?
-              </p>
-              <p class="answer">
-                Yes, in order to attend Hackpoly, you must have a valid .edu email address and can't have graduated more than 6 months prior.
-              </p>
-            </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="clearfix visible-md-block"></div>
 
-            <div class="clearfix visible-sm-block"></div>
-            <div class="clearfix visible-lg-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    How much does it cost?
+                  </p>
+                  <p class="answer">
+                    Hackpoly is cost free to all attendees.
+                  </p>
+                </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                Will there be food?
-              </p>
-              <p class="answer">
-                We will be providing meals, drinks, and snacks. Don't worry, you won't be going hungry.
-              </p>
-            </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    Do I need to be a student?
+                  </p>
+                  <p class="answer">
+                    Yes, in order to attend Hackpoly, you must have a valid .edu email address and can't have graduated more than 6 months prior.
+                  </p>
+                </div>
 
-            <div class="clearfix visible-md-block"></div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="clearfix visible-lg-block"></div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                Do I own my project after the event?
-              </p>
-              <p class="answer">
-                Don't worry, your team will own the project. We want to see the awesome stuff you can make, but even more than that we want to see your project take off afterward.
-              </p>
-            </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    Will there be food?
+                  </p>
+                  <p class="answer">
+                    We will be providing meals, drinks, and snacks. Don't worry, you won't be going hungry.
+                  </p>
+                </div>
 
-            <div class="clearfix visible-sm-block"></div>
+                <div class="clearfix visible-md-block"></div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                How will projects be judged?
-              </p>
-              <p class="answer">
-                You will demo your project to a panel of judges, then they will make decisions based off a combination of novelty, utility, design, overall coolness, and technical complexity.
-              </p>
-            </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    Do I own my project after the event?
+                  </p>
+                  <p class="answer">
+                    Don't worry, your team will own the project. We want to see the awesome stuff you can make, but even more than that we want to see your project take off afterward.
+                  </p>
+                </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <p class="question">
-                This sounds awesome, what do I do now?
-              </p>
-              <p class="answer">
-                Look in the nav bar at the top of the page, and press the apply button! Don't be intimidated if this is your first hackathon, we want to see you here.
-              </p>
-            </div>
+                <div class="clearfix visible-sm-block"></div>
 
-            <div class="clearfix visible-sm-block"></div>
-            <div class="clearfix visible-md-block"></div>
-            <div class="clearfix visible-lg-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    How will projects be judged?
+                  </p>
+                  <p class="answer">
+                    You will demo your project to a panel of judges, then they will make decisions based off a combination of novelty, utility, design, overall coolness, and technical complexity.
+                  </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                  <p class="question">
+                    This sounds awesome, what do I do now?
+                  </p>
+                  <p class="answer">
+                    Look in the nav bar at the top of the page, and press the apply button! Don't be intimidated if this is your first hackathon, we want to see you here.
+                  </p>
+                </div>
+
+                <div class="clearfix visible-sm-block"></div>
+                <div class="clearfix visible-md-block"></div>
+                <div class="clearfix visible-lg-block"></div>
+
+              </div>
+            </div> <!-- End of FAQ Section -->
+
+            <div id="sponsors" class="module">
+              <h2 class="title-line"><span>Sponsors</span></h2>
+
+              <div class="block platinum">
+
+              </div>
+
+              <div class="block gold">
+                
+              </div>
+
+              <div class="block silver">
+                <a href="http://mlh.io">
+                  <img id="mlh" class="grayscale" title="Hackpoly part of the MLH.io Spring 2015 lineup" alt="Major League Hacking sponsors Hackpoly 2015" src="res/sponsors/mlh.png" />
+                </a>
+
+                <a href="http://generalassemb.ly">
+                  <img id="generalassembly" class="grayscale" title="Hackpoly sponsored by General Assembly" alt="Hackpoly sponsored by General Assembly" src="res/sponsors/ga.png" />
+                </a>
+              </div>
+
+              <div class="block bronze">
+                <a href="http://food2fork.com">
+                  <img id="food2fork" class="grayscale" title="Food2Fork sponsors Hackpoly" alt="Food2Fork sponsors Hackpoly" src="res/sponsors/food2fork.png" />
+                </a>
+
+                <a href="http://jetbrains.com">
+                  <img id="jetbrains" class="grayscale" title="Jetbrains Sponsors Hackpoly" alt="Jetbrains Sponsors Hackpoly" src="res/sponsors/jetbrains.png" />
+                </a>
+             </div>
 
           </div>
-        </div> <!-- End of FAQ Section -->
 
-        <div id="sponsors" class="module">
-          <h2 class="title-line"><span>Sponsors</span></h2>
-
-          <div class="block platinum">
-
-          </div>
-
-          <div class="block gold">
-            
-          </div>
-
-          <div class="block silver">
-            <a href="http://mlh.io">
-              <img id="mlh" class="grayscale" title="Hackpoly part of the MLH.io Spring 2015 lineup" alt="Major League Hacking sponsors Hackpoly 2015" src="res/sponsors/mlh.png" />
-            </a>
-
-            <a href="http://generalassemb.ly">
-              <img id="generalassembly" class="grayscale" title="Hackpoly sponsored by General Assembly" alt="Hackpoly sponsored by General Assembly" src="res/sponsors/ga.png" />
-            </a>
-          </div>
-
-          <div class="block bronze">
-            <a href="http://food2fork.com">
-              <img id="food2fork" class="grayscale" title="Food2Fork sponsors Hackpoly" alt="Food2Fork sponsors Hackpoly" src="res/sponsors/food2fork.png" />
-            </a>
-
-            <a href="http://jetbrains.com">
-              <img id="jetbrains" class="grayscale" title="Jetbrains Sponsors Hackpoly" alt="Jetbrains Sponsors Hackpoly" src="res/sponsors/jetbrains.png" />
-            </a>
-         </div>
-
+        </div>
       </div>
 
-    </div>
-  </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
 
-  <div class="footer">
-    <div class="container">
-      <div class="row">
+            <div class="col-xs-12 col-sm-6 text-left">
+              <p> 
+                <a href="http://github.com/mozoby/hackpoly.com">
+                Site
+                </a>
+                by 
+                <a href="http://twitter.com/BryanTbury"> Bryan Thornbury </a> 
+                and 
+                <a href="http://twitter.com/austinlchang"> Austin Chang </a> 
+              </p>
+            </div>
 
-        <div class="col-xs-12 col-sm-6 text-left">
-          <p> 
-            <a href="http://github.com/mozoby/hackpoly.com">
-            Site
-            </a>
-            by 
-            <a href="http://twitter.com/BryanTbury"> Bryan Thornbury </a> 
-            and 
-            <a href="http://twitter.com/austinlchang"> Austin Chang </a> 
-          </p>
+            <div class="col-xs-12 col-sm-6 text-right">
+              <small>Organized By</small> <br />
+
+              <a href="http://polyfounders.com">
+                <img id="pf-logo" src="res/clubs/poly_founders.png" alt="Hackpoly Hosted by Poly Founders"/>
+              </a>
+            </div>
+
+          </div>
         </div>
-
-        <div class="col-xs-12 col-sm-6 text-right">
-          <small>Hosted By</small> <br />
-
-          <a href="http://polyfounders.com">
-            <img id="pf-logo" src="res/clubs/poly_founders.png" alt="Hackpoly Hosted by Poly Founders"/>
-          </a>
-        </div>
-
       </div>
-    </div>
-  </div>
-
+    </div> <!-- End of Column -->
+  </div> <!-- End of Row -->
 </div> <!-- End of container module. -->
 
   <!-- External Scripts -->
@@ -383,12 +419,14 @@
       //For animating the navbar
       var oldHeight = $nav.height();
       var navVis = false;
+
       $(window).scroll(function(){
         if($(document).scrollTop() > ($button.position().top)){
           if(!navVis){
+
+           navVis = true;
            $nav.addClass('notransition');
            $nav.css('height',"20px");
-           console.log(((oldHeight*1) + 50) + "px");
            console.log($nav.css('height'));
            $nav.removeClass('notransition');
 
@@ -396,10 +434,32 @@
            $nav.css('height',oldHeight);
            $nav.css('opacity',1);
 
-
-           navVis = true;
           }
         }
+
+        if($(document).scrollTop() <= 5 && navVis){
+          $nav.css('height',"0px");
+          $nav.css('opacity',0);
+
+          //Timeout synced with css animation
+          setTimeout(function(){
+            if(navVis){
+              $nav.addClass('notransition');
+              $nav.css('display','none');
+              $nav.css('height',oldHeight);
+              $nav.removeClass('notransition');
+
+              navVis = false;
+            }
+            
+          }, 500);
+
+        }
+      });
+
+      //Mobile Menu Button Behavior
+      $('[data-toggle="offcanvas"]').click(function(){
+          $('.row-offcanvas').toggleClass('active');
       });
 
     });
