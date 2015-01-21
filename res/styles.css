@@ -55,11 +55,14 @@ body{
 
 /* Custom Styling */
 
+/* Sidebar Style */
 #sidebar {
 	background:black;
 	height:100%;
 	overflow: auto;
 	padding-left: 0px;
+
+	color:white;
 }
 
 #sidebar .list{
@@ -86,6 +89,19 @@ body{
 #sidebar .list li button{
 	width:100%;
 }
+
+
+#sidebar .share-link {
+	color:white;
+	font-size:36px;
+}
+
+#sidebar .share-text {
+	color:white;
+	font-size: 20px;
+}
+
+/* END Sidebar Style */
 
 #faq .answer   {
 	margin-bottom: 30px;
@@ -121,6 +137,7 @@ body{
 
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color:white;
 }
 
 #prenav img{
@@ -129,6 +146,14 @@ body{
 	max-height:60px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+#prenav .fb-link {
+	color:white;
+}
+
+#prenav .twitter-link {
+	color:white;
 }
 
 .image-module{
